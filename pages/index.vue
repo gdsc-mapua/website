@@ -3,23 +3,49 @@
 </script>
 
 <template>
-  <h1 class="display is-lg">Display Large</h1>
-  <h1 class="display is-md">Display Medium</h1>
-  <h1 class="display is-sm">Display Small</h1>
-
-  <h2 class="headline is-lg">Headline Large</h2>
-  <h2 class="headline is-md">Headline Medium</h2>
-  <h2 class="headline is-sm">Headline Small</h2>
-
-  <h3 class="title is-lg">Title Large</h3>
-  <h3 class="title is-md">Title Medium</h3>
-  <h3 class="title is-sm">Title Small</h3>
-
-  <p class="is-lg">Body Large</p>
-  <p class="is-md">Body Medium</p>
-  <p class="is-sm">Body Small</p>
+  <div id="coming-soon">
+    <h1 class="display is-lg dangwa highlighted">This MF is coming soon!</h1>
+    <h3 class="title is-lg quiapo">Y'all better get your asses ready.</h3>
+    <gdsc-button type="large" link="#">Join The Waitlist</gdsc-button>
+    <gdsc-button type="large outlined" link="#">Join The Waitlist</gdsc-button>
+    <gdsc-button type="large filled" link="#">Join The Waitlist</gdsc-button>
+  </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../node_modules/@matteusan/sentro' with (
+  $prefix: 'gdsc',
+  $context: 'theme',
+  $token-validation: false
+);
 
+#coming-soon {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  min-height: 100svh;
+}
+
+.highlighted {
+  &::after {
+    content: '';
+    width: 100%;
+    height: 0.2rem;
+    display: block;
+    position: relative;
+    top: -1rem;
+    left: 0.5rem;
+    background: sentro.token-get('accent-ink');
+    box-shadow: -0.5rem var(--y-distance, 0.4rem) 0 sentro.token-get('cardinal-amber-400');
+    border-radius: 5000px;
+    transform: rotate(-1deg);
+    transition: all var(--gdsc-theme-transition-time) ease;
+  }
+
+  &:hover {
+    --y-distance: 0.6rem;
+  }
+}
 </style>
