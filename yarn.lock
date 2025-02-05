@@ -15,6 +15,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@antfu/install-pkg@npm:^0.4.1":
+  version: 0.4.1
+  resolution: "@antfu/install-pkg@npm:0.4.1"
+  dependencies:
+    package-manager-detector: ^0.2.0
+    tinyexec: ^0.3.0
+  checksum: 3ffd59fa5a21dcb4951a037f5c91dfbfc152adfef9e7ba231a968f108aa28c1cd22213c437a8d34f2bfea8c2b9a6df20447eb04be15b534a8e9e21a9dcf203c0
+  languageName: node
+  linkType: hard
+
 "@antfu/utils@npm:^0.7.10":
   version: 0.7.10
   resolution: "@antfu/utils@npm:0.7.10"
@@ -564,6 +574,49 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify/collections@npm:^1.0.496":
+  version: 1.0.514
+  resolution: "@iconify/collections@npm:1.0.514"
+  dependencies:
+    "@iconify/types": "*"
+  checksum: 8afcd8121c96441805f8c9269392f4b73949a065d174112e7fde2f328bff64d689b1bdc880dc5cd1ced708863bba40174f4889f8e7907e8cdb93bb8b22626de4
+  languageName: node
+  linkType: hard
+
+"@iconify/types@npm:*, @iconify/types@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@iconify/types@npm:2.0.0"
+  checksum: 029f58542c160e9d4a746869cf2e475b603424d3adf3994c5cc8d0406c47e6e04a3b898b2707840c1c5b9bd5563a1660a34b110d89fce43923baca5222f4e597
+  languageName: node
+  linkType: hard
+
+"@iconify/utils@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "@iconify/utils@npm:2.2.1"
+  dependencies:
+    "@antfu/install-pkg": ^0.4.1
+    "@antfu/utils": ^0.7.10
+    "@iconify/types": ^2.0.0
+    debug: ^4.4.0
+    globals: ^15.13.0
+    kolorist: ^1.8.0
+    local-pkg: ^0.5.1
+    mlly: ^1.7.3
+  checksum: 7d1566eb30b5eaefe732a293dc5f4c80f5f179e4f0db26a316d5b8cbda570442fded127914a4c916cd296ebf39033c78369a46584a44f20aabb997525ff5c009
+  languageName: node
+  linkType: hard
+
+"@iconify/vue@npm:^4.2.0":
+  version: 4.3.0
+  resolution: "@iconify/vue@npm:4.3.0"
+  dependencies:
+    "@iconify/types": ^2.0.0
+  peerDependencies:
+    vue: ">=3"
+  checksum: 5776608a0e247f99b6425fa363fd53d733e0963d73cff80f11667276e95e93dc7d1b087a27703cbac6e23b6b94d7061176d96459cde7885204f479ceed128e5a
+  languageName: node
+  linkType: hard
+
 "@ioredis/commands@npm:^1.1.1":
   version: 1.2.0
   resolution: "@ioredis/commands@npm:1.2.0"
@@ -806,7 +859,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/devtools-kit@npm:1.7.0, @nuxt/devtools-kit@npm:^1.6.3":
+"@nuxt/devtools-kit@npm:1.7.0, @nuxt/devtools-kit@npm:^1.6.3, @nuxt/devtools-kit@npm:^1.6.4":
   version: 1.7.0
   resolution: "@nuxt/devtools-kit@npm:1.7.0"
   dependencies:
@@ -913,6 +966,28 @@ __metadata:
     unplugin: ^2.0.0
     unstorage: ^1.13.1
   checksum: ff2b1668f72dd63288b55a67f9bcafc8d41ae4be510819df5771420bbb4911f199b70e79b47bcfd4e9941916fb1719f1d2fdbd73b7ddbca5f67178159e430d7e
+  languageName: node
+  linkType: hard
+
+"@nuxt/icon@npm:1.10.3":
+  version: 1.10.3
+  resolution: "@nuxt/icon@npm:1.10.3"
+  dependencies:
+    "@iconify/collections": ^1.0.496
+    "@iconify/types": ^2.0.0
+    "@iconify/utils": ^2.2.1
+    "@iconify/vue": ^4.2.0
+    "@nuxt/devtools-kit": ^1.6.4
+    "@nuxt/kit": ^3.14.1592
+    consola: ^3.2.3
+    local-pkg: ^0.5.1
+    mlly: ^1.7.3
+    ohash: ^1.1.4
+    pathe: ^1.1.2
+    picomatch: ^4.0.2
+    std-env: ^3.8.0
+    tinyglobby: ^0.2.10
+  checksum: 2cdc6dd410512931103e4738c5717711e45a0715c98125d855441d7a9e903b3ab078ca05589af34af9027b52c9d7abe28c2929d6fdbdadb44092c43fd57da4fc
   languageName: node
   linkType: hard
 
@@ -3757,6 +3832,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"globals@npm:^15.13.0":
+  version: 15.14.0
+  resolution: "globals@npm:15.14.0"
+  checksum: fa993433a01bf4a118904fbafbcff34db487fce83f73da75fb4a8653afc6dcd72905e6208c49bab307ff0980928273d0ecd1cfc67e1a4782dabfbd92c234ab68
+  languageName: node
+  linkType: hard
+
 "globby@npm:^14.0.2":
   version: 14.0.2
   resolution: "globby@npm:14.0.2"
@@ -5136,6 +5218,7 @@ __metadata:
   dependencies:
     "@matteusan/sentro": 1.1.0
     "@nuxt/fonts": 0.10.3
+    "@nuxt/icon": 1.10.3
     "@nuxt/image": 1.9.0
     nuxt: ^3.15.4
     sass: 1.83.4
@@ -5359,7 +5442,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"package-manager-detector@npm:^0.2.8":
+"package-manager-detector@npm:^0.2.0, package-manager-detector@npm:^0.2.8":
   version: 0.2.9
   resolution: "package-manager-detector@npm:0.2.9"
   checksum: d7f30bc4c8c82edb4b62f60d5cbbd4dfd402a66fd141979e6da07e021225ee158d65ee061f5612a66ee14ddbb585c4e9a52e642839141b7442a05aedc3d152d8
@@ -6955,7 +7038,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tinyexec@npm:^0.3.1, tinyexec@npm:^0.3.2":
+"tinyexec@npm:^0.3.0, tinyexec@npm:^0.3.1, tinyexec@npm:^0.3.2":
   version: 0.3.2
   resolution: "tinyexec@npm:0.3.2"
   checksum: bd491923020610bdeadb0d8cf5d70e7cbad5a3201620fd01048c9bf3b31ffaa75c33254e1540e13b993ce4e8187852b0b5a93057bb598e7a57afa2ca2048a35c
