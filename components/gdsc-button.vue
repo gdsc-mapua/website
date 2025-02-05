@@ -163,23 +163,25 @@ const props = defineProps<{
     padding: sentro.key-create('button-padding', (0.7rem 1.2rem));
   }
 
+  /// TODO: Fix button icon not rendering width.
   .gdsc-button__icon {
+    display: inline-block;
     position: relative;
     color: sentro.key-create('button-icon-ink', inherit);
-    font-size: sentro.key-create('button-icon-size', sentro.token-get('body-size'));
+    font-size: sentro.key-create('button-icon-size', 16px);
     /* @fallback */
-    width: sentro.key-create('button-icon-size', sentro.token-get('body-size'));
+    width: sentro.key-create('button-icon-size', 16px);
     max-width: max-content;
-    height: sentro.key-create('button-icon-size', sentro.token-get('body-size'));
+    height: sentro.key-create('button-icon-size', 16px);
 
     > * {
       position: relative;
       color: sentro.key-create('button-icon-ink', inherit);
-      font-size: sentro.key-create('button-icon-size', sentro.token-get('body-size'));
+      font-size: sentro.key-create('button-icon-size', 16px);
       /* @fallback */
-      width: sentro.key-create('button-icon-size', sentro.token-get('body-size'));
+      width: sentro.key-create('button-icon-size', 16px);
       max-width: max-content;
-      height: sentro.key-create('button-icon-size', sentro.token-get('body-size'));
+      height: sentro.key-create('button-icon-size', 16px);
     }
   }
 
