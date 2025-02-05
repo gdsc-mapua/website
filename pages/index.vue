@@ -6,8 +6,6 @@
   <div id="coming-soon">
     <h1 class="display is-lg dangwa highlighted">This MF is coming soon!</h1>
     <h3 class="title is-lg quiapo">Y'all better get your asses ready.</h3>
-    <gdsc-button type="large" link="#">Join The Waitlist</gdsc-button>
-    <gdsc-button type="large outlined" link="#">Join The Waitlist</gdsc-button>
     <gdsc-button type="large filled" link="#">Join The Waitlist</gdsc-button>
   </div>
 </template>
